@@ -13,9 +13,18 @@ public class Main
     //System.out.println("El genero de personaA es "+personaA.obtenerGenero());
     //System.out.println("El anio de personaA es "+personaA.obtenerAnioNacimiento());
     
-    System.out.println("La edad de "+personaA.obtenerNombre()+ " es "+
-                        personaA.decirEdad()+ " anio(s) "+"con genero "+personaA.obtenerGenero()+" "+
-                        personaA.decirSiEstaVivo());
+                        
+    System.out.println("La edad de "+personaB.obtenerNombre()+ " es "+
+                        personaB.decirEdad()+ " anio(s) "+"con genero "+personaB.obtenerGenero()+" "+
+                        personaB.decirSiEstaVivo());
+    personaB.morir();
+    
+    System.out.println("La edad de "+personaB.obtenerNombre()+ " es "+
+                        personaB.decirEdad()+ " anio(s) "+"con genero "+personaB.obtenerGenero()+" "+
+                        personaB.decirSiEstaVivo());
+                        
+    personaB.revivi();
+    
     System.out.println("La edad de "+personaB.obtenerNombre()+ " es "+
                         personaB.decirEdad()+ " anio(s) "+"con genero "+personaB.obtenerGenero()+" "+
                         personaB.decirSiEstaVivo());

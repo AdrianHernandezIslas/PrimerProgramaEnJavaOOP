@@ -5,6 +5,8 @@ public class Persona
     private char genero;
     private int anioNacimiento;
     private boolean estaVivo;
+    //private int miID;
+    //private static int identificador = 1;
     
     //              "Adrian",       'M',         24
     public Persona(String miNombre,char miGenero, int miAnioNacimiento,boolean miEstaVivo)
@@ -13,6 +15,8 @@ public class Persona
         genero = miGenero;
         anioNacimiento = miAnioNacimiento;
         estaVivo = miEstaVivo;
+        //miID = identificador;
+        //identificador = identificador + 1;
     }
     
     public String obtenerNombre(){
@@ -49,7 +53,27 @@ public class Persona
         return estaVivo;
     }
     
+    public void morir(){
+        estaVivo = false;
+    }
+    
+    public void revivi(){
+        estaVivo = true;
+    }
+    
     public int decirEdad(){
         return 2020 - anioNacimiento;
     }
+    
+    /*public int obtenerMiID(){
+        return miID;
+    }
+    
+    public  int obtenerIdentificador(){
+        return identificador;
+    }*/
+    
+    
+    
+    
 }
