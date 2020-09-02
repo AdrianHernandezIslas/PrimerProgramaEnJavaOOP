@@ -65,15 +65,19 @@ public class Persona
         return 2020 - anioNacimiento;
     }
     
-    /*public int obtenerMiID(){
-        return miID;
-    }
-    
-    public  int obtenerIdentificador(){
-        return identificador;
-    }*/
-    
-    
-    
-    
+    public String montar(Caballo unCaballo){
+        String mensaje = "";
+        if(!unCaballo.getEstaMontado()){
+            if(unCaballo.getEstaVivo()){
+                mensaje = this.nombre + " esta montando a "+unCaballo.getNombre();
+                unCaballo.setEstaMontado(true);
+            }else{
+                mensaje = this.nombre + " no te pases de lanza el caballo ta morido";
+            }
+        }else{
+            mensaje = "No puedes usar el caballo "+unCaballo.getNombre();
+        }
+        
+        return mensaje;
+    }  
 }
